@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/793d8924a3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style/style.css">
+        <meta charset="UTF-8">
+        <title>To-do List</title>
+    </head>
+    <body>
+        <div class="todo-holder">
+        <div class="lists-holder">
+            <div class="list-button-holder">
+            <button type="button" id="show"><i class="fas fa-plus"></i></button>
+            </div>
+            <div id="lists"></div>
+        </div>
+        <div id="list-item">
+            <div id="show-button-holder">
+            <button type="button" id="show-item-form"><i class="fas fa-plus"></i></button>
+            </div>
+            <div id="list-item-holder"></div>
+        </div>
+        </div>
+        <div id="new-todo-form">
+            <div class="new-todo-form-holder">
+                <button type="button" id="close"><i class="fas fa-window-close"></i></button>
+            <form id="todo-form" onsubmit="return false">
+                <label for="name">Name</label>
+                <br>
+                <input type="text" id="name" class="form-input" required>
+
+                <button type="submit" id="todo-submit">Make To-do List</button>
+            </form>
+            </div>
+        </div>
+
+        <div id="todo-item-form-holder">
+            <div id="todo-item-form">
+                <button type="button" id="close-item"><i class="fas fa-window-close"></i></button>
+                <form id="todo-item" onsubmit="return false">
+                    <label for="title">Name</label>
+                    <br>
+                    <input type="text" id="title" class="form-input" required>
+                    <br>
+
+                    <label for="des">Description</label>
+                    <br>
+                    <textarea id="des" class="form-input" rows="3" col="80" required>
+                    </textarea>
+                    <br>
+
+                    <label for="date-input">Due</label>
+                    <br>
+                    <input type="date" id="date-input" class="form-input" required>
+                    <br>
+
+                    <label for="prior">Priority</label>
+                    <br>
+                    <select name="prior" id="prior">
+                        <option value="1">Low</option>
+                        <option value="2">Medium</option>
+                        <option value="3">High</option>
+                    </select>
+                    <br>
+                
+                    <button type="submit" id="todo-item-submit">Make To-do Item</button>
+                </form>
+            </div>
+        </div>
+        <div id="todo-item-edit-holder">
+            <div id="todo-item-edit">
+                <form id="todo-item-edit" onsubmit="return false">
+                    <label for="title-edit">Name</label>
+                    <br>
+                    <input type="text" id="title-edit" class="form-input" required>
+                    <br>
+        
+                    <label for="des-edit">Description</label>
+                    <br>
+                    <textarea id="des-edit" class="form-input" rows="3" col="80" required>
+                            </textarea>
+                    <br>
+        
+                    <label for="date-edit">Due</label>
+                    <br>
+                    <input type="date" id="date-edit" class="form-input" required>
+                    <br>
+        
+                    <label for="prior-edit">Priority</label>
+                    <br>
+                    <select name="prior" id="prior-edit">
+                        <option value="1">Low</option>
+                        <option value="2">Medium</option>
+                        <option value="3">High</option>
+                    </select>
+                    <br>
+        
+                    <button type="submit" id="todo-item-submit-edit">Edit To-do Item</button>
+                </form>
+            </div>
+        </div>
+        <script src="main.js"></script>
+       
+
+    </body>
+</html>
